@@ -1,15 +1,21 @@
 A tool to simplify HTML creation and setting up its attributes
 
-usage example
-const el = ElementMaker("button", {
-id: "submitBtn",
-className: "primary",
-textContent: "Submit",
-attributes: {
-"data-role": "submit",
-"aria-label": "Submit Form"
-}
+Usage example
+
+```js
+const passwordInput = ElementMaker("input", {
+  id: "password",
+  attributes: {
+    type: "password",
+    id: "password",
+    name: "password",
+    minlength: 6,
+    maxlength: 16,
+    required: true,
+    pattern: "/^(?=.*d)(?=.*[a-z])(?=.*[A-Z])(?=.*[W_]).{6,16}$/g",
+  },
 });
+```
 
 Update 1.0.1
 Adjust the attributes parameter processing if they don't necessarily need values
