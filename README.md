@@ -7,7 +7,6 @@ const passwordInput = ElementMaker("input", {
   id: "password",
   attributes: {
     type: "password",
-    id: "password",
     name: "password",
     minlength: 6,
     maxlength: 16,
