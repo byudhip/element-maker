@@ -16,3 +16,6 @@ Adjust the attributes parameter processing if they don't necessarily need values
 
 Update 1.0.2
 Update function to accept options object and support special attribute types
+
+Update 1.0.3
+Rewrite tooltips message for better UX
