@@ -9,7 +9,8 @@ declare module "element-maker" {
     id?: string | null;
 
     /**
-     * A class name to add to the element
+     * One or more class names to add to the element.
+     * Can be a space-separated string (e.g., `"error email"`)
      */
     className?: string | null;
 
@@ -30,13 +31,13 @@ declare module "element-maker" {
   }
 
   /**
-   * Creates a DOM element with optional ID, class, textContent, and attributes.
+   * Creates a DOM element with optional ID, class(es), textContent, and attributes.
    *
    * Example usage:
    * ```ts
    * ElementMaker('input', {
    *   id: 'email',
-   *   className: 'form-control',
+   *   className: 'form-control error',
    *   attributes: {
    *     type: 'email',
    *     required: true,

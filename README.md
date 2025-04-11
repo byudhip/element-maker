@@ -5,6 +5,7 @@ Usage example
 ```js
 const passwordInput = ElementMaker("input", {
   id: "password",
+  class: "important required"
   attributes: {
     type: "password",
     name: "password",
@@ -24,3 +25,6 @@ Update function to accept options object and support special attribute types
 
 Update 1.0.3
 Rewrite tooltips message for better UX
+
+Update 1.0.4
+Add support for multiple className addition

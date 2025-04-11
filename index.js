@@ -4,7 +4,11 @@ function ElementMaker(
 ) {
   const element = document.createElement(tag);
   if (id) element.id = id;
-  if (className) element.classList.add(className);
+  if (className) {
+    className.split("").forEach((cls) => {
+      if (cls) element.classList.add(className);
+    });
+  }
   if (textContent) element.textContent = textContent;
   for (let [key, value] of Object.entries(attributes)) {
     if (value === true || value === null) {
