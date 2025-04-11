@@ -1,13 +1,13 @@
 function ElementMaker(
   tag,
-  { id = null, className = null, textContent = null, attributes = {} }
+  { id = null, classNames = null, textContent = null, attributes = {} }
 ) {
   const element = document.createElement(tag);
   if (id) element.id = id;
-  if (className) {
-    className.split("").forEach((cls) => {
-      if (cls) element.classList.add(className);
-    });
+  if (Array.isArray(classNames)) {
+    element.classList.add(...classNames);
+  } else if (typeof classNames === "string") {
+    element.classList.add(classNames);
   }
   if (textContent) element.textContent = textContent;
   for (let [key, value] of Object.entries(attributes)) {

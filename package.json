@@ -1,6 +1,6 @@
 {
   "name": "element-maker",
-  "version": "1.0.4",
+  "version": "1.0.41",
   "type": "module",
   "types": "element-maker.d.ts",
   "main": "index.js",
