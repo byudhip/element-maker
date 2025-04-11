@@ -5,7 +5,7 @@ Usage example
 ```js
 const passwordInput = ElementMaker("input", {
   id: "password",
-  class: "important required"
+  class: ["important", "required"],
   attributes: {
     type: "password",
     name: "password",
