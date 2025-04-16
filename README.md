@@ -5,7 +5,7 @@ Usage example
 ```js
 const passwordInput = ElementMaker("input", {
   id: "password",
-  class: ["important", "required"],
+  classNames: ["important", "required"],
   attributes: {
     type: "password",
     name: "password",
@@ -28,3 +28,6 @@ Rewrite tooltips message for better UX
 
 Update 1.0.4
 Add support for multiple className addition
+
+Update 1.05
+Fix inconsistencies between the function, the tooltips text, and readme

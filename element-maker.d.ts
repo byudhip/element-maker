@@ -10,9 +10,9 @@ declare module "element-maker" {
 
     /**
      * One or more class names to add to the element.
-     * Can be a space-separated string (e.g., `"error email"`)
+     * Can be a an array (e.g., `[error email]`)
      */
-    className?: string | null;
+    classNames?: string | null;
 
     /**
      * Text content to insert into the element
@@ -37,7 +37,7 @@ declare module "element-maker" {
    * ```ts
    * ElementMaker('input', {
    *   id: 'email',
-   *   className: 'form-control error',
+   *   classNames: 'form-control error',
    *   attributes: {
    *     type: 'email',
    *     required: true,
